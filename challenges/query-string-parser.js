@@ -50,10 +50,11 @@
 function parseQueryString(string) {
   var pairs = string.split("&");
   var output = {};
-  pairs.forEach(function(el) {
+  for (let i = 0; i < pairs.length; i++) {
+    let el = pairs[i];
     var set = el.split("=");
     output[set[0]] = set[1];
-  });
+  }
   return output;
 }
 
@@ -64,10 +65,11 @@ function convertToQueryParameter(object) {
   var keys = Object.keys(object);
   // Create an array to store the key/value pairs
   var pairArr =[];
-  keys.forEach(function(el) {
+  for (let i = 0; i < keys.length; i++) {
     // Create and store a string in the format key=value
+    let el = keys[i];
     pairArr.push(el + "=" + object[el]);
-  });
+  }
   // Return a string created by joining all of the pairs with an '&' between each
   return (pairArr.join("&"));
 }
