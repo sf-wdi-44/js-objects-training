@@ -8,7 +8,7 @@
 ## Challenges
 1. [Letter Count](/challenges/letter-count.js)
 2. [Query String Parser](/challenges/query-string-parser.js)
-3. [Birthday Countdown](/challenges/birthday-countdown.js)
+3. [Vowel Count](/challenges/vowel-count.js)
 4. [Ping Pong](/challenges/ping-pong.js)
 
 #### Key Concepts
